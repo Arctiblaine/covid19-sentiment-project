@@ -59,18 +59,21 @@ def get_time_frame():
     # end: "2022-2-22"
     start = datetime.datetime.strptime("2020-03-10", '%Y-%m-%d')
     end = datetime.datetime.strptime("2022-02-22", '%Y-%m-%d')
+    dates = []
     for i in range(0, 714, 7):
+        dates.append(end.strftime("%Y-%m-%d"))
         end = start + timedelta(days=7)
         # run get_tweets here
-        get_tweet(start.strftime("%Y-%m-%d"), end.strftime("%Y-%m-%d"))
+        # get_tweet(start.strftime("%Y-%m-%d"), end.strftime("%Y-%m-%d"))
         start = start + timedelta(days=7)
+    
+    print(dates)
 
 
 def main():
     #get_time_frame()
     #get_missed_csv("2022-02-15", "2022-02-22")
-    search_terms = ["Covid", "COVID19", "coronavirus", "covid_19"]
-    get_missed_tweets(search_terms, "2022-02-15", "2022-02-22")
+    get_time_frame()
 
 if __name__ == "__main__":
     main()

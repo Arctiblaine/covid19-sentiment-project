@@ -49,7 +49,10 @@ def main():
     names = ["#Covid", "#COVID19", "#coronavirus", "#covid_19",
                     "Covid", "COVID19", "coronavirus", "covid-19"]
     for name in names:
-        path = "C:/Users/snowy/Downloads/2022s/ista498/covid-project"
+        path = "C:/Users/snowy/Downloads/2022s/ista498/covid-project/clean_tweets"
+        to_save = "C:/Users/snowy/Downloads/2022s/ista498/covid-project/analyzed_tweets"
+
+        
         filenames = get_file_names(path + "/" + name + "/")
         df = add_to_one_df(path  + "/" + name + "/", filenames)
         df = format_data(df)
