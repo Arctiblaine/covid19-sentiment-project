@@ -7,6 +7,11 @@ twitter extra light gray - #E1E8ED
 twitter 2x light gray - #F5F8FA
  */
 
+code {
+	display: block;
+	white-space: pre-wrap;
+}
+
 body {
 	background-color: #14171A;
 	color: #F5F8FA;
@@ -16,7 +21,7 @@ body {
 /* custom rules */
 .header_img {
 	height: 400px;
-	background: url("images/header.png");
+	background: url("images/official-header.png");
 	background-size: cover;
 	object-fit: cover;
 }
