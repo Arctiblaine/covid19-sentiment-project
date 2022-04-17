@@ -105,3 +105,8 @@ Example:
 .center {
 	text-align: center;
 }
+
+.credit {
+	font-size: small;
+	font-style: italic;
+}
