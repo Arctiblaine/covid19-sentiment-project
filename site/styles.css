@@ -56,10 +56,9 @@ body {
 }
 
 .menu ul {
-	list-style: none;
 	display: inline-block;
-	height: 75px;     /*          <-- change this line*/
-	list-style-type: none;
+	height: 75px;
+	list-style: none none;
 	font-family: "Segoe UI", serif;
 	font-size: 1.5em;
 	margin: 0;
@@ -72,7 +71,7 @@ body {
 }
 
 .menu ul li a {
-	line-height: 50px; /*          <-- change this line*/
+	line-height: 50px;
 	color: white;
 }
 
