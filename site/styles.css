@@ -21,7 +21,7 @@ body {
 /* custom rules */
 .header_img {
 	height: 400px;
-	background: url("images/official-header.png");
+	background: url("images/misc/official-header.png");
 	background-size: cover;
 	object-fit: cover;
 }

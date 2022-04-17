@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sentiment Analysis - Index</title>
+    <title>Sentiment Analysis - Reddit Data Collection</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,10 +10,10 @@
 <div class="menu">
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="twitter.html">Twitter</a></li>
         <li><a href="reddit.html">Reddit</a></li>
         <li><a href="instagram.html">Instagram</a></li>
-        <li><a href="about.html">About Us</a></li>
         <li><a href="analysis.html">Analysis</a></li>
     </ul>
 </div>
@@ -25,16 +25,16 @@
         <p><span class="tab"></span>I collected posts from Reddit by scraping the platform. I got access to Reddit’s developer site which allowed me to start using their API. After some testing, I found that the Reddit API had a strict data limitation of 100 posts per query. This did not yield enough data during my initial tests. This meant that I would have to run multiple queries and account for the one’s I had already found. After some research, I found an alternative solution in a python wrapper called PRAW (Python Reddit API Wrapper) that helped me get around this limitation. I set up a list of keywords to search for (“covid”, “covid-19”, “coronavirus”, and “covid19”), as well as a list of subreddits to search through (“AskReddit”, ”Coronavirus”, “collapse”, “politics”, “conspiracy”, “news”, “Conservative”, and “democrats”). I used for loops to look for every keyword within each respective subreddit and limited the amount of posts returned for each subreddit to 50. I decided on this number because of how long my program took to fully search through my query. A limitation of 100 posts was still not done even after 2 full days. 50 posts reduced that time to a little over 16 hours. In total, the algorithm collected 4,606 comments across those 8 subreddits. I consulted Professor Rich Thompson and made sure that the amount of data returned would be sufficient for our analysis. After the data was cleaned and processed, it was then graphed for visualization.</p>
         <h2>Data Visualization</h2>
         <span class="tab"></span>All graphs were graphed in R.</p>
-        <img src="images/NegativeScore-reddit-gpoint.png">
-        <img src="images/PositiveGraph-reddit-gpoint.png">
-        <img src="images/Compound_Score-reddit-gpoint.png">
-        <img src="images/reddit-sntmnt-bgrph.png">
+        <img src="images/reddit/NegativeScore-reddit-gpoint.png">
+        <img src="images/reddit/PositiveGraph-reddit-gpoint.png">
+        <img src="images/reddit/Compound_Score-reddit-gpoint.png">
+        <img src="images/reddit/reddit-sntmnt-bgrph.png">
         <h2 class="sub-header">Word Clouds</h2>
-        <img src="images/wordcloud-reddit-better.png">
+        <img src="images/reddit/wordcloud-reddit-better.png">
         <p class="credit">This WordCloud is by Kalyssa Harris</p>
     </div>
 </main>
 <hr>
-<footer class="block">For ISTA 498 - Capstones by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza</footer>
+<footer class="block">For ISTA 498 - Capstone by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza</footer>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sentiment Analysis - Index</title>
+    <title>Sentiment Analysis - Twitter Data Collection</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,10 +10,10 @@
 <div class="menu">
     <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="twitter.html">Twitter</a></li>
         <li><a href="reddit.html">Reddit</a></li>
         <li><a href="instagram.html">Instagram</a></li>
-        <li><a href="about.html">About Us</a></li>
         <li><a href="analysis.html">Analysis</a></li>
     </ul>
 </div>
@@ -33,21 +33,20 @@
             <p><span class="tab"></span>Since the data had multiple values per day, graphing lines was not an option. I took the average of every single day that had tweets, with the help of Jacob Bellows, on Excel.
             The only days that were excluded were days that did not have tweets or were outside the date range.</p>
         <h2 class="sub-header">Averages of the Compound Sentiment with Dates</h2>
-            <img src="images/avgs-cmpd-w-dates.png" alt="Averages of the Compound Sentiment with Dates" class="center">
+             <img src="images/twitter/better-twitter-avg.png" alt="Averages of the Positive Sentiment with Dates">
             <p class="sub-section"><span class="tab"></span>This is the compound average. The compound score is the sum of positive, negative and neutral scores and normalized between -1 and +1. For the purposes of
             graphing, this number has been multiplied from -100 and +100. The more a score is closer to +100, the higher the positivity. However, the more a score is closer to
             -100, the higher the negativity. The graph has been given a regression line, to best describe the behavior of the data. We can see that there is a negative relationship about how
                 Twitter feels about opinions concerning COVID-19 and time going on.</p>
         <h2 class="sub-header">Averages of the Positive/Negative Sentiment with Dates</h2>
-                <img src="images/avgs-cmpd-w-dates.png" alt="Averages of the Positive Sentiment with Dates">
+                <img src="images/twitter/avg-of-neg-sntmnt.png"><img src="images/avg-pos-sntmt.png">
                 <p class="sub-section"><span class="tab"></span>This is the negative average. The negative score is based on a ratio of proportions
                 of the text that fall into the category, and should sum up to be close or equal to one. The same goes for the positive
                 score. Both the negative and positive and neutral scores should add up to be 1 (or close to it.)</p>
-                <img src="images/avg-of-neg-sntmnt.png"><img src="images/avg-pos-sntmt.png">
                 <p class="sub-section"><span class="tab"></span><i>"The pos, neu, and neg scores are ratios for proportions of text that fall in each category (so these should all add up to be 1... or close to it with float operation). These are the most useful metrics if you want to analyze the context & presentation of how sentiment is conveyed or embedded in rhetoric for a given sentence."</i>
                     - <a href="https://github.com/cjhutto/vaderSentiment">The VADER GitHub Page</a></p>
         <h2 class="sub-header">How Many Negative/Positive/Neutral Tweets per Hashtag?</h2>
-                <img src="images/barplot-amt-of-polarity.png" class="center">
+                <img src="images/twitter/barplot-amt-of-polarity.png" class="center">
                 <p class="sub-section">Some notes about the graph:</p>
                 <ul>
                     <li class="sub-section">Red: "covid" and "#covid" polarities amount</li>
@@ -58,17 +57,17 @@
                 <p class="sub-section">What I found unexpected was that there are more positive tweets but the overall compound graph showed that it had a negative slope.</p>
         <h2 class="sub-header">Other Visualizations</h2>
         <h3 class="sub-section">Early Graphs</h3>
-        <img src="images/beta.png">
-        <img src="images/beta-2.png">
-        <img src="images/beta-3.png">
+        <img src="images/misc/beta.png">
+        <img src="images/misc/beta-2.png">
+        <img src="images/misc/beta-3.png">
         <h3 class="sub-section">Word Clouds</h3>
-        <img src="images/twitter-wordcloud-better.png">
+        <img src="images/twitter/twitter-wordcloud-better.png">
         <p class="credit">This WordCloud is by Kalyssa Harris</p>
     <h2>Methods</h2>
            <p><span class="tab"></span>All graphs were achieved with R, programmed by me (Archie). All tweets were collected in Python with Twint to scrape Twitter, by me (Archie). All tweets were then processed to determine if they were in English or not using LangDetect in Python, by me (Archie), and given a sentiment score with VADER, by Duane. </p>
     <p><a href="https://github.com/Arctiblaine/covid19-sentiment-project">Click here to see program files.</a></p>
 </main>
     <hr>
-    <footer class="block">For ISTA 498 - Capstones by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza - 2022</footer>
+    <footer class="block">For ISTA 498 - Capstone by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza - 2022</footer>
 </body>
 </html>
