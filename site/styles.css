@@ -23,6 +23,16 @@ img {
 	max-height: 100%;
 	max-width: 100%;
 }
+.image{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.code-class{
+	font-size: 18px;;
+}
+.insta-list{
+	font-size: 18px;
+}
 .img-2{
 	width: 900px;
 	height: 600px;

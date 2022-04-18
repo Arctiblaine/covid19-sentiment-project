@@ -39,7 +39,8 @@
           address for a short amount of time. Proxies can be used to reduce
           blocking by websites' anti-scraping measures.
         </p>
-        <p>The following steps were followed in order to gather data:</p>
+        <p>The following steps were followed in order to gather data:</p>\
+        <div class="insta-list">
         <ol>
           <li>
             Using an Android phone, you have to download this APK (<a
@@ -69,6 +70,7 @@
           </li>
           <li>Save requests to the API.</li>
         </ol>
+      </div>
         <p>
           After these steps have been completed, and the data has been
           collected, it is time to process the data. Instagram/Facebook/Meta
@@ -78,7 +80,7 @@
           >. and before we can begin working with the data, it needs to be
           decompressed. The following blocks of code do just that.
         </p>
-        <code>
+        <code class="code-class">
           !pip3 install zstandard import zstandard as zstd import json file =
           open("/data/example.zst", "rb") #whatever path its in goes here data =
           file.read() dctx = zstd.ZstdDecompressor() decompressed =
