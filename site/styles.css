@@ -7,20 +7,39 @@ twitter extra light gray - #E1E8ED
 twitter 2x light gray - #F5F8FA
  */
 
+html, body {
+	background-color: #14171A;
+	color: #F5F8FA;
+	font-family: "Segoe UI", serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
 code {
 	display: block;
 	white-space: pre-wrap;
 }
 
-body {
-	background-color: #14171A;
-	color: #F5F8FA;
-	font-family: "Segoe UI", serif;
+/* custom rules */
+.footer {
+	text-align: center;
+	font-size: 20px;
+	/* top right bottom left */
+	margin: 0 200px 0 200px;
 }
 
-/* custom rules */
 .header_img {
-	height: 400px;
+	height: 450px;
+	width: 100%;
 	background: url("images/misc/official-header.png");
 	background-size: cover;
 	object-fit: cover;
