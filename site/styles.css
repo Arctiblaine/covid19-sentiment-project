@@ -137,6 +137,10 @@ Example:
 	text-align: center;
 }
 
+.no-margin{
+	margin-left: 0px;
+}
+
 .credit {
 	font-size: small;
 	font-style: italic;
