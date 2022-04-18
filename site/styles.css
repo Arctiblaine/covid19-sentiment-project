@@ -144,7 +144,21 @@ Example:
 p{
 	font-size: 14px;
 }
-
+h1{
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+h3{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+h5{
+	text-align: center;
+}
 .credit {
 	font-size: small;
 	font-style: italic;
