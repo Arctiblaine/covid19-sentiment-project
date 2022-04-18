@@ -116,7 +116,11 @@ code {
 	line-height: 50px;
 	color: white;
 }
-
+.about{
+	font-size: 20px;
+	/* top right bottom left */
+	margin: 0 200px 0 200px;
+}
 .block {
 	display: inline-block;
 	font-size: 20px;
@@ -152,6 +156,9 @@ Example:
 }
 
 p{
+	font-size: 14px;
+}
+.font-small{
 	font-size: 14px;
 }
 h1{
