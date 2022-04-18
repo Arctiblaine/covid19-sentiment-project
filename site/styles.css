@@ -23,6 +23,11 @@ img {
 	max-height: 100%;
 	max-width: 100%;
 }
+.img-2{
+	width: 1150px;
+	height: 600px;
+	padding: 40px;
+}
 
 code {
 	display: block;
