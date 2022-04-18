@@ -150,14 +150,16 @@ Example:
   }
   .grid-container-2 {
 	display: grid;
-	grid-template-columns: auto ;
+	grid-template-columns: 500px ;
 	gap: 10px;
 	padding: 10px;
+	justify-content: center;
   }
   .grid-container-3 {
 	display: grid;
-	grid-template-columns: auto ;
+	grid-template-columns: 500px ;
 	gap: 10px;
 	padding: 10px;
+	justify-content: center;
   }
   
