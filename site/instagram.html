@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Sentiment Analysis - Instagram Data Collection</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="header_img"></div>
-<div class="menu">
-    <ul>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header_img"></div>
+    <div class="menu">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="twitter.html">Twitter</a></li>
         <li><a href="reddit.html">Reddit</a></li>
@@ -16,46 +16,88 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="analysis.html">Analysis</a></li>
         <li><a href="timeline.html">Timeline</a></li>
-    </ul>
-</div>
-<main>
-    <div class="block">
-        <h1>Instagram Data Collection</h1> <h4><i> - by Kalyssa Harris</i></h4>
-        <p><span class="tab"></span>Instagram is a photo and video sharing social networking service founded on the 6th of October in 2010. It was acquired by Facebook for $1 billion in 2012. Users can post to a permanent feed or to a temporary feed called “stories”. There is also a live-streaming service. Posts can be shared, liked, or added to collections.</p>
+      </ul>
+    </div>
+    <main>
+      <div class="block">
+        <h1>Instagram Data Collection</h1>
+        <h4><i> - by Kalyssa Harris</i></h4>
+        <p>
+          Instagram is a photo and video sharing social networking service
+          founded on the 6th of October in 2010. It was acquired by Facebook for
+          $1 billion in 2012. Users can post to a permanent feed or to a
+          temporary feed called “stories”. There is also a live-streaming
+          service. Posts can be shared, liked, or added to collections.
+        </p>
         <h2>Data Collection</h2>
-        <p><span class="tab"></span>Facebook aka Meta has made increasing efforts to stop outsiders from collecting large amounts of information on their sites. Sending too many queries without a break will cause Instagram to ban your IP address for a short amount of time. Proxies can be used to reduce blocking by websites' anti-scraping measures. </p>
-        <p><span class="tab"></span>The following steps were followed in order to gather data:</p>
+        <p>
+          Facebook aka Meta has made increasing efforts to stop outsiders from
+          collecting large amounts of information on their sites. Sending too
+          many queries without a break will cause Instagram to ban your IP
+          address for a short amount of time. Proxies can be used to reduce
+          blocking by websites' anti-scraping measures.
+        </p>
+        <p>The following steps were followed in order to gather data:</p>
         <ol>
-            <li>Using an Android phone, you have to download this APK (<a href="https://github.com/itsMoji/Instagram_SSL_Pinning">https://github.com/itsMoji/Instagram_SSL_Pinning</a>). It deals with the latest encryption methods that Insta/FB/Meta use.</li>
-            <li>Connect to a proxy (<a href="https://www.charlesproxy.com/">https://www.charlesproxy.com/</a>) on your PC using SSL decryption on the phone.</li>
-            <li>Install SSL certification to view SSL data, monitor it.</li>
-            <li>Search the hashtag on Instagram on the phone and use an app to automatically scroll (<a href="https://play.google.com/store/apps/details?id=jettoast.easyscroll&hl=en_US&gl=US">https://play.google.com/store/apps/details?id=jettoast.easyscroll&hl=en_US&gl=US</a>)</li>
-            <li>Insta/FB/Meta gets mad and blacklists you after a certain amount of time. Then you have to clear everything, log into a new account, use the "Breakpoint" tool in the proxy to inject the page to the request where you left off.</li>
-            <li>Save requests to the API.</li>
+          <li>
+            Using an Android phone, you have to download this APK (<a
+              href="https://github.com/itsMoji/Instagram_SSL_Pinning"
+              >https://github.com/itsMoji/Instagram_SSL_Pinning</a
+            >). It deals with the latest encryption methods that Insta/FB/Meta
+            use.
+          </li>
+          <li>
+            Connect to a proxy (<a href="https://www.charlesproxy.com/"
+              >https://www.charlesproxy.com/</a
+            >) on your PC using SSL decryption on the phone.
+          </li>
+          <li>Install SSL certification to view SSL data, monitor it.</li>
+          <li>
+            Search the hashtag on Instagram on the phone and use an app to
+            automatically scroll (<a
+              href="https://play.google.com/store/apps/details?id=jettoast.easyscroll&hl=en_US&gl=US"
+              >https://play.google.com/store/apps/details?id=jettoast.easyscroll&hl=en_US&gl=US</a
+            >)
+          </li>
+          <li>
+            Insta/FB/Meta gets mad and blacklists you after a certain amount of
+            time. Then you have to clear everything, log into a new account, use
+            the "Breakpoint" tool in the proxy to inject the page to the request
+            where you left off.
+          </li>
+          <li>Save requests to the API.</li>
         </ol>
-        <p><span class="tab"></span>After these steps have been completed, and the data has been collected, it is time to process the data. Instagram/Facebook/Meta compresses the JSON data using <i>zstd</i>
-            <a href="http://facebook.github.io/zstd/">http://facebook.github.io/zstd/</a>. and before we can begin working with the data, it needs to be decompressed.
-        The following blocks of code do just that.</p>
+        <p>
+          After these steps have been completed, and the data has been
+          collected, it is time to process the data. Instagram/Facebook/Meta
+          compresses the JSON data using <i>zstd</i>
+          <a href="http://facebook.github.io/zstd/"
+            >http://facebook.github.io/zstd/</a
+          >. and before we can begin working with the data, it needs to be
+          decompressed. The following blocks of code do just that.
+        </p>
         <code>
-            !pip3 install zstandard
-
-            import zstandard as zstd
-            import json
-            file = open("/data/example.zst", "rb") #whatever path its in goes here
-            data = file.read()
-            dctx = zstd.ZstdDecompressor()
-            decompressed = dctx.decompress(data)
-            decompressed = decompressed.decode('ascii','ignore')
-            dataArray = json.loads(decompressed)
+          !pip3 install zstandard import zstandard as zstd import json file =
+          open("/data/example.zst", "rb") #whatever path its in goes here data =
+          file.read() dctx = zstd.ZstdDecompressor() decompressed =
+          dctx.decompress(data) decompressed =
+          decompressed.decode('ascii','ignore') dataArray =
+          json.loads(decompressed)
         </code>
-        <p><span class="tab"></span>All files were looped through and combined. It was then cleaned, and graphed for visualization.</p>
+        <p>
+          All files were looped through and combined. It was then cleaned, and
+          graphed for visualization.
+        </p>
         <h2>Data Visualizations</h2>
         <h2 class="sub-header">Word Clouds</h2>
-        <img src="images/instagram/instagram-wordcloud-updated.png">
+        <img src="images/instagram/instagram-wordcloud-updated.png" />
         <p class="credit">This WordCloud is by Kalyssa Harris</p>
-    </div>
-</main>
-    <hr>
-    <footer class="footer">For ISTA 498 - Capstone by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza</footer>
-</body>
+      </div>
+    </main>
+    <hr />
+    <footer class="footer">
+      For ISTA 498 - Capstone by Rincon, Thomas O’Connell, Harris, Zvijer,
+      Barraza
+    </footer>
+  </body>
 </html>
