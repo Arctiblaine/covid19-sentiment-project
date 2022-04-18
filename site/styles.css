@@ -45,7 +45,10 @@ code {
     object-fit: cover;
 
 }
-
+ .img-container{
+	 height: 650px;
+	 width: 650px;
+ }
 .menu {
 	background-color: #333;
 	overflow: hidden;
