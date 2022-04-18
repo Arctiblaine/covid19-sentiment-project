@@ -142,3 +142,22 @@ Example:
 	gap: 10px;
 	padding: 10px;
   }
+  .grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	padding: 10px;
+  }
+  .grid-container-2 {
+	display: grid;
+	grid-template-columns: auto ;
+	gap: 10px;
+	padding: 10px;
+  }
+  .grid-container-3 {
+	display: grid;
+	grid-template-columns: auto ;
+	gap: 10px;
+	padding: 10px;
+  }
+  
