@@ -170,6 +170,11 @@ Example:
     margin-right: 280px;
 	text-align: left;
 }
+.text-align{
+	margin-left: 280px;
+    margin-right: 280px;
+	text-align: left;
+}
 .sub-header {
 	margin-left: 80px;
 }
