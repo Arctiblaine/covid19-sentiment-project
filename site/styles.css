@@ -184,6 +184,11 @@ Example:
     margin-right: 280px;
 	text-align: left;
 }
+.about-member{
+	margin-left: 89px;
+    margin-right: 11px;
+    text-align: left;
+}
 .about-align{
 	margin-left: 220px;
     margin-right: 170px;
