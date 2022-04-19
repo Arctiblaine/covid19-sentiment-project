@@ -28,15 +28,19 @@ img {
 	padding-bottom: 20px;
 }
 .code-class{
-	font-size: 18px;;
+	font-size: 14px;
 }
 .insta-list{
 	font-size: 18px;
 }
 .img-2{
-	width: 900px;
-	height: 600px;
+	width: 45%;
 	padding: 40px;
+}
+
+.word-cloud {
+	width: 30%;
+	margin: auto;
 }
 
 code {
@@ -46,23 +50,24 @@ code {
 
 /* custom rules */
 
-.footer {
+footer {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+	padding-bottom: 10px;
     /* top right bottom left */
     margin: 0 200px 0 200px;
+
 }
 
 .header_img {
-    height: 200px;
+    height: 25%;
     width: 100%;
     background-size: cover;
     object-fit: cover;
 
 }
  .img-container{
-	 height: 500px;
-	 width: 650px;
+	 width: 50%;
 	 display: block;
 	 margin-left: auto;
 	 margin-right: auto;
@@ -73,6 +78,7 @@ code {
 	overflow: hidden;
 	text-align: center;
 	font-family: "Segoe UI", serif;
+	height: 50px;
 }
 
 .menu a {
@@ -81,7 +87,7 @@ code {
 	text-align: center;
 	padding: 15px 15px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 18px;
 	font-family: "Segoe UI", serif;
 }
 
@@ -103,7 +109,7 @@ code {
 	list-style: none none;
 	font-family: "Segoe UI", serif;
 	font-size: 1.5em;
-	margin: 0;
+	margin: -15px;
 	padding: 0;
 }
 
@@ -116,16 +122,33 @@ code {
 	line-height: 50px;
 	color: white;
 }
+
+a, a:hover {
+	color: #ED4C67;
+}
+
+a, a:active {
+	color: #EA2027;
+}
+
 .about{
 	font-size: 20px;
 	/* top right bottom left */
 	margin: 0 200px 0 200px;
 }
+
+.text-box {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+article {
+	margin: 0 300px 0 300px;
+}
+
 .block {
 	display: inline-block;
-	font-size: 20px;
-	/* top right bottom left */
-	margin: 0 200px 0 200px;
+	font-size: 14px;
 }
 
 /* TO USE TABS
@@ -156,7 +179,7 @@ Example:
 }
 
 p{
-	font-size: 16px;
+	font-size: 14px;
 }
 .font-small{
 	font-size: 16px;
@@ -164,9 +187,7 @@ p{
 h1{
 	text-align: center;
 }
-h2{
-	text-align: center;
-}
+
 h3{
 	text-align: center;
 }
@@ -198,7 +219,7 @@ h5{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 40%;
   position: relative;
   margin: auto;
 }
@@ -283,6 +304,5 @@ h5{
 }
 .timeline{
 	padding: 40px;
-	height: 600px;
-	width: 1150px;
+	width: 45%;
 }
