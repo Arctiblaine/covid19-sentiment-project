@@ -34,8 +34,9 @@ img {
 	font-size: 18px;
 }
 .img-2{
-	width: 45%;
 	padding: 40px;
+	height: 485px;
+    width: 670px;
 }
 
 .word-cloud {
@@ -174,6 +175,13 @@ Example:
 	margin-left: 280px;
     margin-right: 280px;
 	text-align: left;
+}
+.image-insta{
+	height: 485px;
+    width: 670px;
+}
+.article{
+	display: contents;
 }
 .sub-header {
 	margin-left: 80px;
@@ -321,5 +329,6 @@ h5{
 }
 .timeline{
 	padding: 40px;
-	width: 45%;
+	height: 485px;
+    width: 670px;
 }
