@@ -189,6 +189,12 @@ Example:
     margin-right: 11px;
     text-align: left;
 }
+.graphs{
+	padding-top: 20px;
+    padding-bottom: 20px;
+	height: 536px;
+	width: 489px;
+}
 .about-align{
 	margin-left: 220px;
     margin-right: 170px;
@@ -349,4 +355,9 @@ h5{
 	padding: 40px;
 	height: 540px;
     width: 803px;
+}
+.timeline-content{
+	display: inline-block;
+    font-size: 14px;
+    padding: 0px 100px 0px 100px;
 }
