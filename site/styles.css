@@ -149,6 +149,8 @@ article {
 .block {
 	display: inline-block;
 	font-size: 14px;
+	padding: 0px 100px 0px 100px;
+	text-align: center;
 }
 
 /* TO USE TABS
@@ -156,7 +158,9 @@ article {
 Example:
 	<p><span class="tab"></span>Our project’s....</p>
 */
-
+.twtlist{
+	text-align: left;
+}
 .tab {
 	display: inline-block;
 	margin-left: 40px;
@@ -166,10 +170,12 @@ Example:
 	margin-left: 80px;
 }
 
-.sub-section {
-	margin-left: 100px;
-}
+.graph-notes{
+	padding-left: 0px;
+    display: inline-block;
+    margin-left: 0px;
 
+}
 .center {
 	text-align: center;
 }
@@ -187,7 +193,9 @@ p{
 h1{
 	text-align: center;
 }
-
+h2{
+	text-align: center;
+}
 h3{
 	text-align: center;
 }
