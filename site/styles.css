@@ -184,6 +184,11 @@ Example:
     margin-right: 280px;
 	text-align: left;
 }
+.about-align{
+	margin-left: 220px;
+    margin-right: 170px;
+    text-align: left;
+}
 .image-insta{
 	height: 506px;
     width: 829px;
