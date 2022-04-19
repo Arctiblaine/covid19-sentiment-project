@@ -165,7 +165,11 @@ Example:
 	display: inline-block;
 	margin-left: 40px;
 }
-
+.image-text{
+	margin-left: 280px;
+    margin-right: 280px;
+	text-align: left;
+}
 .sub-header {
 	margin-left: 80px;
 }
