@@ -229,12 +229,25 @@ Example:
 .no-margin{
 	margin-left: 0px;
 }
+.list-graph{
+	font-size: 20px;
+}
+.ig-text{
+	margin-left: 209px;
+    margin-right: 185px;
+    text-align: left;
+}
+.about-headers{
+	margin-left: 259px;
+	margin-right: 280px;
+    text-align: left;
+}
 
 p{
-	font-size: 14px;
+	font-size: 20px;
 }
 .font-small{
-	font-size: 16px;
+	font-size: 18px;
 }
 h1{
 	text-align: center;
