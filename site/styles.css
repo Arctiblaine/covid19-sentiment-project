@@ -195,6 +195,10 @@ Example:
 	height: 600px;
     width: 834px;
 }
+.about-text{
+	margin-left: 259px;
+    text-align: inherit;
+}
 .home-about{
 	margin-left: 120px;
     margin-right: 120px;
