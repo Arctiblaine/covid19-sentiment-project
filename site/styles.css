@@ -189,6 +189,10 @@ Example:
     margin-right: 11px;
     text-align: left;
 }
+.insta-list{
+	text-align: left;
+    font-size: 18px;
+}
 .graphs{
 	padding-top: 20px;
     padding-bottom: 20px;
