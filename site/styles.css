@@ -48,7 +48,11 @@ code {
 	display: block;
 }
 .analysis-text{
-	margin: 0px;
+	margin-left: 280px;
+    margin-right: 280px;
+}
+.analysis-header{
+	font-size: 40px;
 }
 /* custom rules */
 
