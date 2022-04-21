@@ -43,10 +43,23 @@
         <li>Shortened Isolation: December 27, 2021. CDC shortens isolation from 10 to 5 days if they do not have symptoms.
       </li>
       </ol> 
-      
-      
       </p>
-    </main>
+      <h2 class="analysis-header">Null Hypothesis</h2>
+      <p class="analysis-text"> There is no difference in the sentiment means of the decisions made by the United States Government during the Covid-19 pandemic.</p>
+      <h2 class="analysis-header">Data</h2>
+    </p class="analysis-text">Below is the summary statistics of our data.</p>
+    <img src="images/analysis/Analysis1.jpg" >
+
+    <p class="analysis-text">Below is a graph that displays the average sentiment, standard deviation, and polarity of each decision. A neutral polarity is decided by the score being betwwen -0.05 and 0.05. Anything lower is considered negative, while eveyrthing above is positive. This is in conjuction with VADER, which was used to determine the sentiment of each post.</p>
+   <img src="images/analysis/Analysis2.png" >
+   <h2 class="analysis-header">Results and Interpretation</h2>
+   <p class="analysis-text">Below are the results from the Kurskal-Wallis test. This test was chosen because we have a 
+    continuous dependent variable in the compound scores, 10 total categorical groups of independent variables in the decisions, and an independence of observations since we only allowed a single post from each respective user. Since our data contains different n values for each decision and is not normally distributed we would need to perform this test instead of a one-way Anova. We received a p-value much smaller than 0.05 which means there was a statistically significant difference between sentiment of each decision made. This allows us to reject the null hypothesis.  <p/>
+  <img src="images/analysis/Analysis3.jpg">
+  <p class="analysis-text"> Below are the results from the Dunn’s test.  We used this post hoc test in order to pinpoint which specific means are significant from the others.  Here we learned that there was a significant difference between the following decisions made: Booster and Hydroxychoroquine, Booster and National Emergency, Booster and Unemployment, Hydroxychloroquine and National Emergency, Hydroxychloroquine and Unemployment, JJ not Preferred And National Emergency, JJ not Preferred and Unemployment, National Emergency and Shortened Isolation, National Emergency and Stimulus, Shortened Isolation and Unemployment. 
+  </p>
+  <img src="images/analysis/Analysis4.jpg" >
+  </main>
     <hr />
     <footer>
       For ISTA 498 - Capstones by Rincon, Thomas O’Connell, Harris, Zvijer,
