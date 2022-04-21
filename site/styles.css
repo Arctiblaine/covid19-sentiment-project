@@ -52,6 +52,12 @@ code {
     margin-right: 280px;
 	font-size: 20px;
 }
+.data-subtext{
+	margin-left: 280px;
+    margin-right: 280px;
+    font-size: 20px;
+	text-align: center;
+}
 .analysis-header{
 	font-size: 40px;
 }
