@@ -15,7 +15,6 @@ twitter 2x light gray - #F5F8FA
 	margin: 0;
 	padding: 0;
 }
-
 img {
 	padding: 0;
 	display: block;
@@ -30,7 +29,6 @@ img {
 .code-class{
 	font-size: 18px;
 }
-
 .img-2{
 	padding: 40px;
 	height: 658px;
@@ -42,16 +40,16 @@ img {
 .insta-content{
 	text-align: left;
 }
-
 .word-cloud {
 	width: 30%;
 	margin: auto;
 }
-
 code {
 	display: block;
 }
-
+.analysis-text{
+	margin: 0px;
+}
 /* custom rules */
 
 footer {
@@ -76,7 +74,7 @@ footer {
 	 margin-left: auto;
 	 margin-right: auto;
 
- }
+}
 .menu {
 	background-color: #333;
 	overflow: hidden;
