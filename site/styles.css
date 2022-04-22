@@ -37,6 +37,21 @@ img {
 .insta-container{
 	text-align: center;
 }
+
+.stats_block {
+	text-align: center;
+}
+
+.stats_list {
+	margin-left:635px;
+	list-style-position: inside;
+}
+
+.stats_bar {
+	width: 25%;
+	margin:0 auto;
+}
+
 .insta-content{
 	text-align: left;
 }
