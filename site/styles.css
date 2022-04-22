@@ -27,6 +27,10 @@ img {
 	padding-bottom: 20px;
 	width: 834px;
     height: 600px;
+} 
+.analysis-image{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .code-class{
 	font-size: 18px;
