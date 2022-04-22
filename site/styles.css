@@ -25,6 +25,8 @@ img {
 .image{
 	padding-top: 20px;
 	padding-bottom: 20px;
+	width: 834px;
+    height: 600px;
 }
 .code-class{
 	font-size: 18px;
