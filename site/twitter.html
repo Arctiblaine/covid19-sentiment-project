@@ -23,34 +23,29 @@
 </div>
 <main class="block">
     <h1>Twitter Data Collection</h1> <h4><i> by Archie Rincon</i></h4>
-        <p class="text-align">Twitter is a social media platform, and the first tweet was tweeted out on March 21, 2006. The completed version went live in July 2006.
-        Users can post small blurbs, called tweets, of what they are doing, and other users are allowed to see it and react it. Users can react by; liking the tweet, "retweeting" the tweet,
-        or replying to the author.</p>
+        <p class="text-align">
+
+        </p>
         <h2>Data Collection</h2>
-    <p class="text-align">I collected tweets from Twitter by scraping the platform. I used a library from GitHub called <a href="https://github.com/twintproject/twint">Twint in Python</a>, and
-    since Twint only allows up to a week to be scraped, I needed to set up an algorithm that searched all weeks from March 14, 2020, to February 22, 2022. I did this by
-    using a loop that stopped at the last week, and got every single date seven days after March 14, 2020. It then collected tweets, given a start date and end date. In total,
-        this algorithm collected up to 514,283 tweets (after pruning for non-English tweets, text was processed in Python with <a href="https://pypi.org/project/langdetect/">LangDetect</a>) and searching across eight different hashtags/keywords ("#Covid", "#COVID19", "#coronavirus", "#covid_19",
-        "Covid", "COVID19", "coronavirus", "covid-19".) Upon cleanup and processing, the data was then given to Duane to process for sentiment, and once the data was given sentiment values I was able to visualize the data from there.</p>
-        <h2>Findings - Data Visualization</h2>
+    <p class="text-align">I collected tweets from Twitter by scraping the platform. I used a library from GitHub called <a href="https://github.com/twintproject/twint">Twint</a>, and
+        since Twint only allows up to a week to be scraped, I needed to set up an algorithm that searched all weeks from March 14, 2020, to February 22, 2022. I did this by using a loop that stopped at the last week and got every date seven days after March 14, 2020. It then collected tweets and gave a start date and end date. In total, this algorithm collected up to 514,283 tweets (after pruning for non-English tweets, text was processed in Python with
+        <a href="https://pypi.org/project/langdetect/">LangDetect</a>) and searching across eight different hashtags/keywords ("#Covid", "#COVID19", "#coronavirus", "#covid_19", "Covid", "COVID19", "coronavirus", "covid-19".) Upon cleanup and processing, the data was given to Duane to process for the sentiment. Once the data was given sentiment, I was able to visualize the data from there.
+    <h2>Findings - Data Visualization</h2>
             <p><i><a href="about.html">All markings on the graphs can be mapped to the dates found here</a></i></p>
-            <p class="text-align">Since the data had multiple values per day, graphing lines was not an option. I took the average of every single day that had tweets, with the help of Jacob Bellows, on Excel.
-            The only days that were excluded were days that did not have tweets or were outside the date range.</p>
+            <p class="text-align">
+                Since the data had multiple values on a day, graphing lines was not an option. With the assistance of Jacob Bellows, Excel calculated the average of every day that had tweets. The only days that were excluded were days that did not have tweets or were outside the date range.
+            </p>
         <h2 class="sub-header no-margin">Averages of the Compound Sentiment with Dates</h2>
              <img src="images/twitter/better-twitter-avg.png" alt="Averages of the Positive Sentiment with Dates">
-            <p class="image-text">This is the compound average. The compound score is the sum of positive, negative and neutral scores and normalized between -1 and +1. For the purposes of
-            graphing, this number has been multiplied from -100 and +100. The more a score is closer to +100, the higher the positivity. However, the more a score is closer to
-            -100, the higher the negativity. The graph has been given a regression line, to best describe the behavior of the data. We can see that there is a negative relationship about how
-                Twitter feels about opinions concerning COVID-19 and time going on.</p>
+            <p class="image-text">This is the compound average. The compound score is the sum of positive, negative, and neutral scores and is normalized between -1 and +1. For graphing, this number has been multiplied from -100 and +100. The closer a score lies to +100, the higher the positivity. Inversely, a score closer to -100, the higher the negativity. The graph has been given a regression line, to best describe the behavior of the data. We can see that there is a negative relationship between how Twitter feels about opinions concerning COVID-19 and the time going on.</p>
         <h2 class="sub-header no-margin">Averages of the Positive/Negative Sentiment with Dates</h2>
-            <div class="image">
-                <img src="images/twitter/avg-of-neg-sntmnt.png">
+            <div>
+                <img class="twitter-img" src="images/twitter/avg-of-neg-sntmnt.png">
             </div>
-            <p class="image-text">This is the negative average. The negative score is based on a ratio of proportions
-                of the text that fall into the category, and should sum up to be close or equal to one. The same goes for the positive
-                score. Both the negative and positive and neutral scores should add up to be 1 (or close to it.)</p>
-            <div class="image">
-                <img src="images/twitter/avg-pos-sntmt.png">
+            <p class="image-text">This is the negative average. The negative score is based on a ratio of proportions of the text that fall into the category and should sum up to be close or equal to one. The same goes for the positive score. Both the negative and positive and neutral scores should add up to 1 (or close to it.)
+            </p>
+            <div>
+                <img class="twitter-img" src="images/twitter/avg-pos-sntmt.png">
             </div>
                 <p class="image-text"><i>"The pos, neu, and neg scores are ratios for proportions of text that fall in each category (so these should all add up to be 1... or close to it with float operation). These are the most useful metrics if you want to analyze the context & presentation of how sentiment is conveyed or embedded in rhetoric for a given sentence."</i>
 
@@ -77,6 +72,6 @@
     <p><a href="https://github.com/Arctiblaine/covid19-sentiment-project">Click here to see program files.</a></p>
 </main>
     <hr>
-    <footer>For ISTA 498 - Capstone by Rincon, Thomas O’Connell, Harris, Zvijer, Barraza</footer>
+    <footer>For ISTA 498 - Capstone by Rincon, O’Connell, Harris, Zvijer, Barraza</footer>
 </body>
 </html>

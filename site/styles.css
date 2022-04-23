@@ -22,9 +22,24 @@ img {
 	max-height: 100%;
 	max-width: 100%;
 }
+.twitter-img{
+	margin-left: 265px;
+}
 .image{
 	padding-top: 20px;
 	padding-bottom: 20px;
+	width: 834px;
+    height: 600px;
+} 
+.ig-margin{
+	margin-left: 340px;
+	margin-right: 340px;
+}
+.analysis-image{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 993px;
+	height: 800px;
 }
 .code-class{
 	font-size: 18px;
@@ -43,7 +58,7 @@ img {
 }
 
 .stats_list {
-	margin-left:635px;
+	text-align: center;
 	list-style-position: inside;
 }
 
